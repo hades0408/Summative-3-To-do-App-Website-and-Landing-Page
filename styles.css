@@ -1,0 +1,182 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/anime-background.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-bottom: 3px solid #ff6347;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #ff6347;
+    animation: fadeIn 2s ease-in-out;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff6347;
+    max-width: 800px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    background: linear-gradient(135deg, rgba(255, 99, 71, 0.7), rgba(255, 69, 0, 0.7)); 
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.7); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.features li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.features li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.7); 
+}
+
+.features li a:hover {
+    color: #ff6347;
+}
+
+.screenshots .screenshot {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: 5px solid #ff6347;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.screenshots .screenshot:hover {
+    transform: scale(1.05);
+}
+
+.cta-button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff6347;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+    box-shadow: 0 0 10px #ff4500;
+}
+
+.todo-form form,
+.update-form,
+.delete-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-form input[type="text"],
+.update-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff6347; 
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff4500;
+    box-shadow: 0 0 10px #ff4500;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff6347; 
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #ff4500;
+    box-shadow: 0 0 10px #ff4500;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: 3px solid #ff6347;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
